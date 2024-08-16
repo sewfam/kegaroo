@@ -77,6 +77,11 @@ section h2 {
     /* margin-top: 0.2em; */
 }
 
+.small-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .center-link {
     text-align: center;
     margin: 20px 0; /* Optional: Add some margin for spacing */
