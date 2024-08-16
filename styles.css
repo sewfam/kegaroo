@@ -1,39 +1,143 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    position: relative;
 }
 
 header {
-    background-color: #ff9800;
+    background: linear-gradient(#ff9800cc, rgba(255, 152, 0, 0.8)), url('header-bg.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     text-align: center;
     padding: 1em 0;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: auto;
 }
 
 header h1 {
-    margin: 0;
+    margin: 0.5em 0 0em 0;
+    font-size: 4em;
 }
 
 main {
-    padding: 1em;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
     margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     color: #ff9800;
+    font-size: 1.7em;
+    margin: 0.5em 0 0.5em 0; /* Reset top margin */
+    text-align: center;
+}
+
+#countdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff3e0;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 3em 4em 4em 4em;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.event-date {
+    font-size: 2em; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #ffffff;
+    /* margin-top: 0.2em; */
+}
+
+.center-link {
+    text-align: center;
+    margin: 20px 0; /* Optional: Add some margin for spacing */
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 1em;
+    color: #666;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: calc(33.333% - 20px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e68900;
 }

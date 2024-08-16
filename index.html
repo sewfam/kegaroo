@@ -8,30 +8,106 @@
 </head>
 <body>
     <header>
-        <h1>Kegaroo Event</h1>
-        <p>Annual Sunrise Keg Party at Palisades Ski Resort, Tahoe</p>
+        <img src="logo.webp" alt="Kegaroo Logo" class="logo">
+        <h1>keg4roo</h1>
+        <p>sunrise kegger + dj at palisades tahoe</p>
+        <p class="event-date">January 19, 2025</p>
     </header>
+    <section id="countdown">
+        <h2>Countdown to Glory</h2>
+        <div id="countdown-timer">
+            <div class="time-box">
+                <span id="days" class="time"></span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours" class="time"></span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes" class="time"></span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds" class="time"></span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+    </section>
     <main>
         <section id="about">
-            <h2>About the Event</h2>
-            <p>Join us for a fun-filled morning in your favorite kangaroo onesie!</p>
+            <h2>
+                <div class="center-link">
+                    <a href="https://www.amazon.com/Plush-Kangaroo-Piece-Animal-Costume/dp/B0145JUBPK/ref=sr_1_1_sspa?crid=35F7UBN7R4OGO&dib=eyJ2IjoiMSJ9.EN9HQY50sGZZ9XMpX5oxBd-rg6n8LsShFBx4Wwh5UOTL6fFXBRQnjg_3jQGnJ8juuMVsB_6821dbcuFjFUkF8WgJxd7QXkKlt25aJdj8kxa7IM7cXr-I7OYIJLTJFkaeYhK4Ps20WERyoCRiaidZj3m-i3see7NVBvUnGKqt_Z6tkp8kgxabQo9o0vyY_zxz9d69rW9Ve7bZP5y9MwsEUjLEE8ZWER8roqmPXibO-0r-eciJ2YjTG6vGrB_iD8nHCwW8rFb1PqqEeqyL3HVN5R1O8zdXuAWEw3cjQfgTWUg.9CKMehtIgeWgRir8qPSRjQEUfZO9AZuRw_mbVtYJPlo&dib_tag=se&keywords=kangaroo+onesie&qid=1723780658&sprefix=kangaroo+onesi%2Caps%2C162&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">~ Get your kangaroo onesie ~</a>
+                </div>            
+            </h2>
+        </section>
+        
+        <section id="gallery">
+            <!-- <h2>Photo Gallery</h2> -->
+            <div class="gallery-container">
+                <img src="IMG_0337.jpeg" alt="Photo 2">
+                <img src="IMG_0325.PNG" alt="Photo 1">
+                <img src="IMG_0343.jpeg" alt="Photo 3">
+                <!-- <img src="photo4.jpg" alt="Photo 4">
+                <img src="photo5.jpg" alt="Photo 5">
+                <img src="photo6.jpg" alt="Photo 6"> -->
+            </div>
         </section>
         <section id="schedule">
             <h2>Event Schedule</h2>
             <ul>
-                <li>6:00 AM - Gathering</li>
-                <li>6:30 AM - Sunrise Keg Party Begins</li>
-                <li>9:00 AM - Breakfast</li>
-                <li>12:00 PM - Event Ends</li>
+                <li>3:30 AM - wake up all sweaty and gross</li>
+                <li>7:30 AM - krack keg</li>
+                <li>7:31 AM - boogie</li>
+                <li>9:00 AM - supply kevin with a crisp high-five</li>
+                <li>10:90 AM - downhill the thrill</li>
+                <li>12:00 PM - rooballs trophy ceremony</li>
             </ul>
         </section>
-        <section id="location">
-            <h2>Location</h2>
-            <p>Palisades Ski Resort, Tahoe</p>
+        <section id="sponsors">
+            <h2>Thank You to Our Sponsors</h2>
+            <p>We would like to extend our gratitude to the following sponsor for their hot underwear:</p>
+            <ul>
+                <li>
+                    <a href="https://www.amazon.com/KECS-Underwear-Comfortable-Breathable-Material/dp/B0B789JN64/ref=sr_1_1?dib=eyJ2IjoiMSJ9.AM8ou306Kj9Qz-KvRiftwtaRdLsCs3zWGrAT5eVh4fNqO01YuPhkNXXh8H7oEq945ucf2qrYIoznYjKgQvgX6FAnifglbE8xEoU4LYfxB2ze5vhCdz9CsuFd3GNCBq0XEs4kn76qmcaUj-Q6uYzVlEi9BUIu0wmBydAAtKaYBtT-Ru-QfdbBk0Zzb8k3m17TGn0m3w4uW_5UbrFw2gKCyF7stiT4kLu_llXJyEOrw0Dtry8ugj1JRui0v1dREMJ-Qe-1U91k_LwO107J93OREbldjE0dfQQ_xkh-2sG8KXc.TTXTfyuLURy0ifY4LqLodTuixJj4TjIqjOiICLa5iQ8&dib_tag=se&keywords=KECS&qid=1723780482&sr=8-1" target="_blank">KECS</a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Kegaroo Event. All rights reserved.</p>
+        <p>&copy; 2021 Konsejo Kegaroo. All rights reserved.</p>
     </footer>
+    <script>
+        // Set the date we're counting down to
+        const eventDate = new Date("Jan 19, 2025 06:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const countdownFunction = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the event date
+            const distance = eventDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements with respective ids
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is finished, write some text
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown-timer").innerHTML = "The event has started!";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
