@@ -16,19 +16,56 @@ header {
     text-align: center;
     padding: 1em 0;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-bottom: 1pm solid #ddd;
 }
 
-header .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 200px;
+h3 {
+    text-align: center;
+    font-size: 1.4em; /* Adjust the size as needed */
+    margin: 0.5em 0;
+}
+
+.small-image {
+    max-width: 1000px !important; /* Adjust the size as needed */
+    height: auto !important;
+}
+
+.logo {
+    max-width: 50px;
     height: auto;
+    margin-top: 0.5em;
+    align-self: center;
+}
+
+header .left, header .center, header .right {
+    flex: 1;
+    text-align: center;
+}
+
+header .left {
+    text-align: left;
+}
+
+header .right {
+    text-align: right;
+}
+
+header h1, header p {
+    margin: 0;
+    font-size: 1em;
 }
 
 header h1 {
-    margin: 0.5em 0 0em 0;
-    font-size: 4em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 0.9em;
+    color: #666;
 }
 
 main {
@@ -47,34 +84,36 @@ section {
 
 section h2 {
     color: #ff9800;
-    font-size: 1.7em;
+    font-size: 2em;
     margin: 0.5em 0 0.5em 0; /* Reset top margin */
     text-align: center;
 }
 
 #countdown {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #fff3e0;
-    padding: 1em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffecd4; /* Solid background color */
+    padding: 0em 0 0 0.5;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 3em 4em 4em 4em;
+    margin: 2em 0em 0em 0em;
+    border: 2px solid #ffb861;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
 }
 
 #countdown-timer {
     display: flex;
     justify-content: center;
     gap: 1em;
+    flex-wrap: wrap;
 }
-
 .event-date {
     font-size: 2em; /* Adjust the size as needed */
     font-weight: bold;
     color: #ffffff;
-    /* margin-top: 0.2em; */
+    margin-top: 0em;
 }
 
 .small-image {
@@ -91,6 +130,10 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 139, 50, 0.2);
+    padding: 0.5em;
+    border-radius: 5px;
+    min-width: 70px;
 }
 
 .time {
