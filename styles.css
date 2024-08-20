@@ -11,7 +11,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
-    padding: 0em 0em 2em 0em;
+    padding: 0em 0em 0em 0em;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -128,6 +128,12 @@ h2 {
     margin-right: 8px; /* Space between icon and text */
 }
 
+.instagram-handle {
+    color: #e18830b5; /* Change to your preferred color */
+    font-weight: bold; /* Optional: Make the text bold */
+    font-size: 0.7rem; /* Adjust the font size as needed */
+}
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
     .instagram-button {
@@ -142,5 +148,9 @@ h2 {
     .instagram-icon {
         width: 20px; /* Adjust the size for smaller screens */
         height: 20px; /* Adjust the size for smaller screens */
+    }
+
+    .instagram-handle {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
     }
 }
