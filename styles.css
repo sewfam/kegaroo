@@ -29,6 +29,12 @@ h2 {
     margin-bottom: 1em;
 }
 
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0em;
+    color: #d47d27;
+}
+
 .countdown {
     display: flex;
     flex-wrap: wrap; /* Allows the items to wrap if the screen is too narrow */
