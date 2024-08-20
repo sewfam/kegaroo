@@ -101,3 +101,46 @@ h2 {
         padding: 10px 20px;
     }
 }
+
+/* Instagram Button Styling */
+.instagram-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.instagram-button a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000; /* Change to your preferred color */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    transition: color 0.3s ease;
+}
+
+.instagram-button a:hover {
+    color: #E1306C; /* Instagram's brand color */
+}
+
+.instagram-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .instagram-button {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .instagram-button a {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+
+    .instagram-icon {
+        width: 20px; /* Adjust the size for smaller screens */
+        height: 20px; /* Adjust the size for smaller screens */
+    }
+}
